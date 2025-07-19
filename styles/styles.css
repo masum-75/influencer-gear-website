@@ -66,9 +66,11 @@
 .banner{
     display: flex;
     align-items: center;
-    margin: 30px;
-    padding: 30px 50px;
     justify-content: space-between;
+    border: 1px solid white;
+    margin: 30px;
+    padding: 25px 30px;
+    
 
 }
 .banner-section{
@@ -105,8 +107,9 @@
 }
 .banner-image {
   position: relative;
-  width: 100%;
-  max-width: 500px;
+  width: 50%;
+  max-width: 600px;
+  gap: 130px;
 }
 
 .circle-bg {
@@ -122,4 +125,291 @@
   position: relative;
   z-index: 1;
   width: 100%;
+}
+
+/* sponsor related styles */
+
+.sponsor-companies{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    margin: 50px;
+    padding: 30px;
+    max-width: 100%;
+    align-items: center;
+    justify-content: space-between;
+   transition: 2s ease;
+
+}
+
+.sponsor-companies:hover {
+  filter: grayscale(50%);
+}
+/* products related style */
+.popular-section {
+    width: 1050px;
+  padding: 30px 120px;
+  background-color: #f9f9f9;
+}
+
+.popular-title {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+.product-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+ 
+}
+.product-card img {
+  width: 100%;
+  align-items: center;
+  border-radius: 8px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.product-card h3 {
+  font-size: 28px;
+  margin: 10px 0 5px;
+}
+.price {
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #222;
+}
+.details {
+  font-size: 14px;
+  font-weight: bold;
+  color: #666;
+  line-height: 1.4;
+}
+/* feature product style */
+.featured-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 60px;
+  padding: 30px;
+  background-color: #fff;
+}
+
+.image-box img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+}
+
+.content-box {
+  padding-left: 40px;
+  max-width: 600px;
+}
+
+.content-box h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.content-box p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+/* footer section style */
+.footer {
+  background-color: #0b0a2d;
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.footer h3 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.footer p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+.social-icons a {
+  color: #fff;
+  margin: 0 10px;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #ec1d77; 
+}
+
+/* Tablet View (768px and below) */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 15px 20px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 15px;
+    padding: 0;
+    margin: 10px 0;
+  }
+
+  .banner {
+    flex-direction: column-reverse; 
+    text-align: center;
+    margin: 20px;
+    padding: 15px;
+  }
+
+  .banner-section,
+  .banner-image {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .banner-title {
+    font-size: 30px;
+  }
+
+  .banner-description {
+    font-size: 14px;
+    margin: 10px auto;
+  }
+
+  .sponsor-companies {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 10px;
+    gap: 10px;
+  }
+
+  .popular-section {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .featured-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .content-box {
+    padding-left: 0;
+  }
+}
+
+/* Mobile View (576px and below) */
+@media screen and (max-width: 576px) {
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .sponsor-companies {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .banner-title {
+    font-size: 24px;
+  }
+
+  .banner-description {
+    font-size: 12px;
+  }
+   .banner-image img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+  }
+
+  .banner-button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+  .footer {
+    flex-direction: column;
+    text-align: center;
+    padding: 30%;
+  }
+
+  .footer h3 {
+    font-size: 18px;
+  }
+
+  .footer p {
+    font-size: 12px;
+  }
+
+  .social-icons a {
+    font-size: 16px;
+  }
+}
+/* Tablet screen (max-width: 992px) */
+@media screen and (min-width:576px) and (max-width:992px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .banner {
+    flex-direction: column-reverse; 
+    text-align: center;
+    padding: 20px;
+  }
+
+  .banner-section {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .banner-image img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+  }
+
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 25px;
+  }
+
+  .sponsor-companies {
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 10px;
+  }
+
+  .footer {
+    flex-direction: column;
+    text-align: center;
+    padding: 50%;
+  }
+
+  .footer .social-icons {
+    margin-top: 10px;
+    justify-content: center;
+  }
 }
