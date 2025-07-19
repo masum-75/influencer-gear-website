@@ -12,10 +12,6 @@
 }
 
 /* header section styles */
-.header{
-
-}
-
 /* nav section styles */
 .navbar{
     display: flex;
@@ -83,6 +79,7 @@
   font-size: 40px;
   font-weight: 700;
   color: #111;
+  margin-top: 0;
   margin-bottom: 30px;
 }
 .banner-description {
